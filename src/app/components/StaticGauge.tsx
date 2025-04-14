@@ -8,7 +8,6 @@ export function StaticGauge({ fearScore, segments }: StaticGaugeProps) {
     const cx = 0;
     const cy = 0;
     const r = 200;
-    const pivotUp = 0;
     // const sweep = 180 * (1 + pivotUp / (r))
     const sweep = 180
     const angle = (fearScore / 100) * sweep - sweep;

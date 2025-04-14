@@ -1,7 +1,7 @@
 
 const BASE_URL = 'https://query1.finance.yahoo.com/v8/finance/chart';
 
-async function fetchYahooData(symbol: string): Promise<any> {
+async function fetchYahooData(symbol: string) {
     const url = `${BASE_URL}/${symbol}?range=1d&interval=1m`;
     const response = await (await fetch(url)).json();
 
